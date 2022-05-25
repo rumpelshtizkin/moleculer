@@ -52,13 +52,13 @@ module.exports = {
 	},
 	// Default log level for built-in console logger. It can be overwritten in logger options above.
 	// Available values: trace, debug, info, warn, error, fatal
-	logLevel: "info",
+	logLevel: "error",
 
 	// Define transporter.
 	// More info: https://moleculer.services/docs/0.14/networking.html
 	// Note: During the development, you don't need to define it because all services will be loaded locally.
 	// In production you can set it via `TRANSPORTER=nats://localhost:4222` environment variable.
-	transporter: null, //"Redis"
+	transporter: "Redis", //"Redis"
 
 	// Define a cacher.
 	// More info: https://moleculer.services/docs/0.14/caching.html
